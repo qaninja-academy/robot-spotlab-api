@@ -1,5 +1,5 @@
 requests
 pymongo
 robotframework
-robotframework-jsonlibray
+robotframework-jsonlibrary
 robotframework-requests
