@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "thumb": "acme.jpg",
+            "payload": {
+                "company": "Acme",
+                "techs": "ruby, python",
+                "price": "10"
+            }
+        },
+        {
+            "thumb": "yahoo.jpg",
+            "payload": {
+                "company": "Yahoo",
+                "techs": "java",
+                "price": "20"
+            }
+        }
+    ]
+}

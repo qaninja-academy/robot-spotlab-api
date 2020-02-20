@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "thumb": "acme.jpg",
+            "payload": {
+                "company": "Acme X",
+                "techs": "ruby, python, lua",
+                "price": "10"
+            }
+        },
+        {
+            "thumb": "yahoo.jpg",
+            "payload": {
+                "company": "Yahoo X",
+                "techs": "java, lua",
+                "price": "20"
+            }
+        },
+        {
+            "thumb": "google.jpg",
+            "payload": {
+                "company": "Google X",
+                "techs": "golang",
+                "price": "20"
+            }
+        }
+    ]
+}
