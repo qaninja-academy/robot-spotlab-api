@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image "qaninja/pyrobot"
+            image "qaninja/pyrobot2"
         }
     }
 
