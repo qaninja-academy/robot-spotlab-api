@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image "python:2.7.17-stretch"
+            image "python:3.7.6-stretch"
         }
     }
 
