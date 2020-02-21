@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image "qaninja/pyrobot2"
-            args "-u root --privileged"
+            args "-u qaninja --privileged"
         }
     }
 
