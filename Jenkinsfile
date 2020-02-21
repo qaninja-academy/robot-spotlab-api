@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage("Preparation") {
             steps {
+                sh "sudo pip install --upgrade pip"
                 sh "pip install -r requirements.txt --user"
             }
         }
