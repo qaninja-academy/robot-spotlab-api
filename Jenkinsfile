@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("Preparation") {
             steps {
-                sh "pip install virtualenv --user"
+                input message: "Continuar?", ok: "Sim"
                 sh "pip install -r requirements.txt --user"
             }
         }
