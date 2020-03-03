@@ -8,7 +8,7 @@ New Session
 
     ${response}=        Post Session    ${payload}
     #${code}=            Convert To String       ${response.status_code}
-    ${code}=            204
+    ${code}=            Convert To String       204
 
     Should Be Equal     ${code}      200
 
