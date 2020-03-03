@@ -7,8 +7,7 @@ New Session
     &{payload}=         Create Dictionary   email=fernando@papito.io
 
     ${response}=        Post Session    ${payload}
-    #${code}=            Convert To String       ${response.status_code}
-    ${code}=            Convert To String       204
+    ${code}=            Convert To String       ${response.status_code}
 
     Should Be Equal     ${code}      200
 
