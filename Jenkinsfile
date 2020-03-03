@@ -14,6 +14,7 @@ pipeline {
         stage("Tests") {
             steps {
                 sh "robot -d ./logs -i smoke tests"
+                robot "logs"
             }
         }
     }
