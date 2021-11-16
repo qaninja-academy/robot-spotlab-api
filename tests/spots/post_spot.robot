@@ -22,7 +22,7 @@ Create a new Company
     ${token}                Get Token           papito@hotmail.com      pass123
     &{payload}=             Create Dictionary   company=Google  techs=java, golang
 
-    &{headers}=     Create Dictionary   user_id=${token}
+    &{headers}=     Create Dictionary   Authorization=Bearer ${token}
     ${response}=    Post Request        ${BASE_API}/company      json=${payload}     headers=${headers}
 
     bla bla bla
