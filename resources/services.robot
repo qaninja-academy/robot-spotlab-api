@@ -30,6 +30,17 @@ Set Token
     ${token}        Convert To String   ${response.json()['_id']}
 
     Set Suite Variable  ${token}  
+    
+Get Token
+    [Arguments]     ${email}     ${password}
+
+    &{payload}      Create Dictionary   email=${email}      password=${password}
+    &{headers}=     Create Dictionary   Content-Type=application/json
+
+    ${response}=    Post Session        ${payload}
+    ${token}        Convert To String   ${response.json()['token']}
+
+    [return]  ${token}  
 
 ### /spots
 Save Spot
