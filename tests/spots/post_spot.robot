@@ -16,6 +16,16 @@ Create a new Spot
     ${code}=            Convert To String       ${response.status_code}
 
     Should Be Equal     ${code}      200
+    
+Create a new Company
+    
+    ${token}                Get Token           papito@hotmail.com      pass123
+    &{payload}=             Create Dictionary   company=Google  techs=java, golang
+
+    &{headers}=     Create Dictionary   user_id=${token}
+    ${response}=    Post Request        ${BASE_API}/company      json=${payload}     headers=${headers}
+
+    bla bla bla
 
 Empty Company
     &{payload}=         Create Dictionary   company=${EMPTY}  techs=java, golang  price=50
